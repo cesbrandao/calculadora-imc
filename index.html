@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pa-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Calculadora IMC</title>
+    </head>
+    <body>
+        <main>
+            <noscript>O Javascript está desativado no seu navegador!</noscript>
+            <section class="intro-sec">
+                <h1>Calculadora de IMC</h1>
+                <p>Índice é usado para determinar peso ideal e gradações que indicam magreza, sobrepeso e obesidade. O Índice de Massa Corporal (IMC) é uma das principais ferramentas, adotada inclusive pela Organização Mundial de Saúde (OMS), para calcular o chamado “peso ideal”.</p>
+            </section>
+            <section class="imc-sec">
+                <section class="form-imc">
+                    <h2>Calcule aqui</h2>
+                    <form action="">
+                        <div>
+                            <label for="height-input">Altura (m)</label>
+                            <input type="text" id="height-input" required>
+                        </div>
+                        <div>
+                            <label for="weight-input">Peso (kg)</label>
+                            <input type="text" id="weight-input" required>
+                        </div>
+                        <div>
+                            <label for="imc-result">IMC</label>
+                            <input type="text" id="imc-result" disabled>
+                        </div>
+                    </form>
+                    <div>
+                        <button id="calculate-imc">Calcular</button>
+                    </div>
+                </section>
+                <section class="info-imc">
+                    <h2>Faixas de IMC</h2>
+                    <ul>
+                        <li><span>Menor que 18,5:</span> Abaixo do peso</li>
+                        <li><span>18,5 - 24,9:</span> Peso normal</li>
+                        <li><span>25,0 - 29,9:</span> Sobrepeso</li>
+                        <li><span>30,0 - 34,9:</span> Obesidade Grau 1</li>
+                        <li><span>35,0 - 39,9:</span> Obesidade Grau 2</li>
+                        <li><span>40,0 ou mais:</span> Obesidade Grau 3</li>
+                    </ul>
+                </section>
+            </div>
+            
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
